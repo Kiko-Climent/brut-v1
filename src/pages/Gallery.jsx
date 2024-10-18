@@ -1,6 +1,12 @@
+import GallerySectionOne from "../components/GallerySectionOne";
+import GallerySectionTwo from "../components/GallerySectionTwo";
+
 const Gallery = () => {
   return (
-    <div className="text-red">gallery</div>
+    <div>
+      <GallerySectionOne />
+      <GallerySectionTwo />
+    </div>
   )
 }
 
