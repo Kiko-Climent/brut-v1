@@ -91,6 +91,10 @@ p {
   line-height: 0.7; /* Ajusta este valor según sea necesario */
 }
 
+.custom-line-height2 {
+  line-height: 0.6; /* Ajusta este valor según sea necesario */
+}
+
 @keyframes page-turn {
   0% {
     transform: rotateY(0deg);
