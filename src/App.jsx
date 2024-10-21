@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { useState,useEffect } from "react";
-import SplashScreen from "./components/Splash";
+// import SplashScreen from "./components/Splash";
+import SplashScreen from "./components/Splash2";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery"
