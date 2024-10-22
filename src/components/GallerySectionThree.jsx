@@ -21,23 +21,23 @@ const GallerySectionThree = () => {
   return (
     <section className="h-screen flex justify-between px-2 gap-2 overflow-hidden">
       <div className="w-1/4 h-full flex flex-col">
-      <Slider {...settings} className="w-full h-3/4">
-        <div className='flex h-full'>
-          <img src={galleryimage4} alt="Imagen 1" className="w-full h-full object-cover" />
+        <Slider {...settings} className="w-full h-3/4">
+          <div className='flex h-full'>
+            <img src={galleryimage4} alt="Imagen 1" className="w-full h-full object-cover" />
+          </div>
+          <div className='flex h-full'>
+            <img src={galleryimage5} alt="Imagen 2" className="w-full h-full object-cover" />
+          </div>
+          <div className='flex h-full'>
+            <img src={galleryimage7} alt="Imagen 3" className="w-full h-full object-cover" />
+          </div>
+        </Slider>
+        <div className='h-1/4 flex items-end w-full'>
+          <p className='flex-schrink text-justify text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
+          Opened in 1967, the museum showcases a unique blend of modernist and futuristic architectural styles, reflecting the innovative spirit of space exploration. The building features sweeping lines and expansive glass facades that symbolize the vastness of space and the vision of humanity's journey beyond Earth.
+          </p>
         </div>
-        <div className='flex h-full'>
-          <img src={galleryimage5} alt="Imagen 2" className="w-full h-full object-cover" />
-        </div>
-        <div className='flex h-full'>
-          <img src={galleryimage7} alt="Imagen 3" className="w-full h-full object-cover" />
-        </div>
-      </Slider>
-      <div className='h-1/4 flex items-start relative w-full'>
-        <p className='absolute -top-12 text-start text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
-        Opened in 1967, the museum showcases a unique blend of modernist and futuristic architectural styles, reflecting the innovative spirit of space exploration. The building features sweeping lines and expansive glass facades that symbolize the vastness of space and the vision of humanity's journey beyond Earth.
-        </p>
       </div>
-</div>
 
       <div className="w-3/4 h-full relative group">
         <img
