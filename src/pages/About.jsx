@@ -1,6 +1,10 @@
+import AboutOne from "../components/AboutOne";
+
 const About = () => {
   return (
-    <div className="text-red">about</div>
+    <div>
+      <AboutOne />
+    </div>
   )
 }
 
