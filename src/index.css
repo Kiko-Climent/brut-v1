@@ -73,6 +73,8 @@ p {
   font-weight: 200; /* ExtraLight */
 }
 
+/* Parallax Sections */
+
 .parallax {
   /* The image used */
   background-image: url("../src/assets/images/goran-petkovic.jpg");
@@ -86,6 +88,21 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../src/assets/images/nick-wessaert.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .custom-line-height {
   line-height: 0.7; /* Ajusta este valor según sea necesario */
