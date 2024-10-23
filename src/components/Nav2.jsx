@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const Nav = () => {
+const Nav2 = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,18 +29,18 @@ const Nav = () => {
     >
       {/* Logo con tamaño dinámico */}
       <div
-        className={`transition-all duration-300 ${
-          isScrolled ? "text-xl" : "text-9xl"
+        className={`transition-all duration-300 flex items-center justify-center ${
+          isScrolled ? "text-lg" : "text-[46vw] h-screen"
         }`}
       >
-        brut *
+        brut*
       </div>
 
       {/* Elementos del navbar que aparecen al hacer scroll */}
       <ul
         className={`transition-opacity duration-300 ${
           isScrolled ? "opacity-100" : "opacity-0"
-        } flex items-center gap-1 text-lg`}
+        } flex items-center gap-1 text-base`}
       >
         <li><Link to="/">home /</Link></li>
         <li><Link to="/gallery">gallery /</Link></li>
@@ -50,4 +50,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav2;
