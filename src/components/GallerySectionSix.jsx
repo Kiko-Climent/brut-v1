@@ -24,9 +24,9 @@ const GallerySectionSix = () => {
         </div>
         <div className='absolute w-full top-4 pl-2 text-left text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-white'>
           <ul>
-            <li>Barbican State.</li>
-            <li>London, UK.</li>
-            <li>1982</li>
+            <li>Northwestern University Library.</li>
+            <li>Illinois, US.</li>
+            <li>1970</li>
           </ul>
         </div>
         <div className='absolute w-full bottom-2 pl-2 text-left text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
