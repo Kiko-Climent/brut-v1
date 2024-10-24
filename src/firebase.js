@@ -4,7 +4,7 @@ import { getStorage } from "firebase/storage"; // Asegúrate de importar getStor
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAb-ToNbDpgppJ2fOzg289Kc8RqvapY6FQ",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "brut-99566.firebaseapp.com",
   projectId: "brut-99566",
   storageBucket: "brut-99566.appspot.com",
@@ -13,9 +13,11 @@ const firebaseConfig = {
   measurementId: "G-2H58GY62PX"
 };
 
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 
 // Exporta como exportaciones nombradas
 export { app, storage };
+
