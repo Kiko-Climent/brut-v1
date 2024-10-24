@@ -1,42 +1,79 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Nav2 = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [rotationCount, setRotationCount] = useState(0);
+
+  // Lista de palabras para el carrusel
+  const words = [
+    "Brutalist",
+    "Brutalista",
+    "ブルータリスト",
+    "Бруталист",
+    "Μπρουταλιστής",
+    "브루탈리스트",
+    "brut*"
+  ];
+
+  const totalRotations = 3; // Número de vueltas que quieres que dé el carrusel
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Cambia el estado si el usuario ha hecho scroll hacia abajo más de 50px
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+    if (isHome) {
+      const handleScroll = () => {
+        if (window.scrollY > 1) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    // Limpia el evento cuando el componente se desmonte
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      // Intervalo para rotar las palabras
+      const wordInterval = setInterval(() => {
+        setCurrentWordIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % words.length;
+
+          if (nextIndex === 0) {
+            setRotationCount((prevRotation) => prevRotation + 1);
+          }
+
+          // Detener cuando se completan 3 vueltas y la palabra final es "brut*"
+          if (rotationCount >= totalRotations && nextIndex === words.length - 1) {
+            clearInterval(wordInterval);
+            return nextIndex;
+          }
+
+          return nextIndex;
+        });
+      }, 300);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+        clearInterval(wordInterval);
+      };
+    } else {
+      setIsScrolled(true);
+    }
+  }, [isHome, rotationCount]);
 
   return (
     <nav
       id="header"
       className={`fixed z-10 w-full flex items-center justify-between py-1 px-2 text-white`}
     >
-      {/* Logo con tamaño dinámico */}
       <div
-        className={`transition-all duration-300 flex items-center justify-center ${
-          isScrolled ? "text-lg" : "text-[46vw] h-screen"
+        className={`transition-all duration-300 flex items-start justify-start ${
+          isHome && !isScrolled ? "text-[10vw] font-bold h-screen" : "text-lg"
         }`}
       >
-        brut*
+        {/* Mostrar la palabra del carrusel */}
+        {words[currentWordIndex]}
       </div>
-
-      {/* Elementos del navbar que aparecen al hacer scroll */}
       <ul
         className={`transition-opacity duration-300 ${
           isScrolled ? "opacity-100" : "opacity-0"

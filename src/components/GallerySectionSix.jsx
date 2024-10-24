@@ -29,8 +29,8 @@ const GallerySectionSix = () => {
             <li>1970</li>
           </ul>
         </div>
-        <div className='absolute w-full bottom-2 pl-2 text-left text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
-          <p>Well renowed for its bold, concrete forms and geometric lines.<br/>The design, led by architects Chamberlin, Powell, and Bon,<br/>embraces the ethos of Brutalism, emphasizing raw materials<br/>and functionality while creating a unique urban landscape</p>
+        <div className='absolute w-full bottom-2 pl-2 text-justufy text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
+          <p>The building's design aligns with the Brutalist<br/> movement's goal of expressing the material and<br/> structural elements of the architecture, often<br/> giving buildings a sense of weight and permanence.</p>
         </div>
       </div>
     </section>
