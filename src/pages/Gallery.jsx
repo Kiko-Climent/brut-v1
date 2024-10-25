@@ -1,3 +1,4 @@
+import GallerySectionEight from "../components/GallerySectionEight";
 import GallerySectionFive from "../components/GallerySectionFive";
 import GallerySectionFour from "../components/GallerySectionFour";
 import GallerySectionOne from "../components/GallerySectionOne";
@@ -15,6 +16,7 @@ const Gallery = () => {
       <GallerySectionFour />
       <GallerySectionFive />
       <GallerySectionSix />
+      <GallerySectionEight />
       <GallerySectionSeven />
     </div>
   )

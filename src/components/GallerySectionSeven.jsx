@@ -25,7 +25,7 @@ const GallerySectionSeven = () => {
   };
 
   return (
-    <section className="h-screen flex justify-around px-2 pt-0 relative">
+    <section className="h-screen flex justify-around px-2 pt-2 relative">
 
       {/* Contenedor con el slider e imagenes */}
       <div className="w-1/4 h-full flex flex-col">
