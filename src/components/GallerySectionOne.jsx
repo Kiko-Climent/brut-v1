@@ -64,7 +64,7 @@ const GallerySectionOne = () => {
         </div>
 
         <div className='mt-0 flex-schrink'>
-          <p className='text-justify text-xs lg:text-sm leading-none tracking-wide text-white'>
+          <p className='text-justify text-xs lg:text-sm leading-3 tracking-wide text-white'>
           {galleryData ? galleryData.description : "Loading..."} {/* Muestra la descripción o un mensaje de carga */}
           </p>
         </div>
