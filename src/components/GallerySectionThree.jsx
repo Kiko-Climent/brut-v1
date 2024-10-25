@@ -1,11 +1,15 @@
 import React from 'react';
-import Slider from "react-slick";
-import galleryimage4 from '../assets/images/pavel-neznanov.jpg';
-import galleryimage5 from '../assets/images/pavel-neznanov2.jpg';
-import galleryimage6 from '../assets/images/pavel-neznanov3.jpg';
-import galleryimage7 from '../assets/images/pavel-neznanov4.jpg';
+import UrlFirebase from './firebase/urlFirebase';
+import { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import { app } from '../firebase';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
+
+const db = getFirestore(app);
 
 const GallerySectionThree = () => {
+  const [galleryData, setGalleryData] = useState(null); 
+
   const settings = {
     infinite: true, 
     speed: 1000, 
@@ -18,33 +22,48 @@ const GallerySectionThree = () => {
     dots: false, 
   };
 
+  const fetchGalleryData = async () => {
+    const docRef = doc(db, 'gallery', 'S2cP6lbaJ2U8obQZk5Uw');
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      setGalleryData(docSnap.data()); 
+
+    } else {
+      console.log("No such document!");
+    }
+  };
+
+  useEffect(() => {
+    fetchGalleryData();
+  }, []);
+
+  if (!galleryData) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <section className="h-screen flex justify-between px-2 gap-2 overflow-hidden">
       <div className="w-1/4 h-full flex flex-col">
         <Slider {...settings} className="w-full h-3/4">
           <div className='flex h-full'>
-            <img src={galleryimage4} alt="Imagen 1" className="w-full h-full object-cover" />
+            <UrlFirebase url={galleryData.carousel_pics[0]} className="w-full h-full object-cover" />
           </div>
           <div className='flex h-full'>
-            <img src={galleryimage5} alt="Imagen 2" className="w-full h-full object-cover" />
+            <UrlFirebase url={galleryData.carousel_pics[1]} className="w-full h-full object-cover" />
           </div>
           <div className='flex h-full'>
-            <img src={galleryimage7} alt="Imagen 3" className="w-full h-full object-cover" />
+            <UrlFirebase url={galleryData.carousel_pics[2]} className="w-full h-full object-cover" />
           </div>
         </Slider>
         <div className='h-1/4 flex items-end w-full'>
           <p className='flex-schrink text-justify text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
-          Opened in 1967, the museum showcases a unique blend of modernist and futuristic architectural styles, reflecting the innovative spirit of space exploration. The building features sweeping lines and expansive glass facades that symbolize the vastness of space and the vision of humanity's journey beyond Earth.
+          {galleryData ? galleryData.description : "Loading..."}
           </p>
         </div>
       </div>
 
-      <div className="w-3/4 h-full relative group">
-        <img
-          src={galleryimage6}
-          alt="Imagen derecha"
-          className="w-full h-full object-cover"
-        />
+      <div className="w-3/4 h-full relative group">    
+        <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover" />
         <div className="absolute inset-0 flex justify-center items-center overflow-hidden">
           <div className="absolute inset-x-0 top-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
           <div className="absolute inset-x-0 bottom-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:translate-y-full"></div>
@@ -53,9 +72,15 @@ const GallerySectionThree = () => {
 
         <div className='absolute w-full top-2 pl-2 text-left text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-white'>
           <ul>
-            <li>Tsiolkovsky State Museum.</li>
-            <li>Kaluga, Russia.</li>
-            <li>1967</li>
+          {galleryData ? (
+              <>
+                <li>{galleryData.title}</li>
+                <li>{galleryData.location}</li>
+                <li>{galleryData.year}</li>
+              </>
+            ) : (
+              <li>Loading...</li>
+            )}
           </ul>
         </div>
       </div>
