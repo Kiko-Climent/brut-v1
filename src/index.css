@@ -76,9 +76,6 @@ p {
 /* Parallax Sections */
 
 .parallax {
-  /* The image used */
-  background-image: url("../src/assets/images/goran-petkovic.jpg");
-
   /* Set a specific height */
   min-height: 500px;
 
@@ -90,9 +87,6 @@ p {
 }
 
 .parallax2 {
-  /* The image used */
-  background-image: url("../src/assets/images/nick-wessaert.jpg");
-
   /* Set a specific height */
   min-height: 500px;
 
@@ -141,3 +135,5 @@ p {
   padding: 0px 10px;
   font-size: 20px; /* Tamaño reducido para el logo */
 }
+
+/* custom mouse pointer*/

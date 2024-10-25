@@ -19,7 +19,7 @@ function App() {
   //if (showSplash) {
   //  return <SplashScreen />; // Mostrar solo el SplashScreen si el estado es true
   //}
-
+  
   return (
     <div className="overflow-x-hidden">
       <Router>

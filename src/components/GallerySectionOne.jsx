@@ -49,8 +49,7 @@ const GallerySectionOne = () => {
       <div className="w-1/4 h-full flex flex-col">
         <div className="">
           <Slider {...settings} className="w-full h-full">
-            <div className='flex h-full'>
-              
+            <div className='flex h-full'>              
               <UrlFirebase url={galleryData.carousel_pics[0]} className="w-full h-full object-cover object-bottom" />
             </div>
             <div className='flex h-full'>
@@ -65,7 +64,7 @@ const GallerySectionOne = () => {
         </div>
 
         <div className='mt-0 flex-schrink'>
-          <p className='text-justify text-sm leading-none tracking-wide text-white'>
+          <p className='text-justify text-xs lg:text-sm leading-none tracking-wide text-white'>
           {galleryData ? galleryData.description : "Loading..."} {/* Muestra la descripción o un mensaje de carga */}
           </p>
         </div>
