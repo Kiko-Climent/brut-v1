@@ -1,3 +1,6 @@
+import React from "react";
+import { useEffect } from "react";
+
 import GallerySectionEight from "../components/GallerySectionEight";
 import GallerySectionFive from "../components/GallerySectionFive";
 import GallerySectionFour from "../components/GallerySectionFour";
@@ -8,6 +11,9 @@ import GallerySectionThree from "../components/GallerySectionThree";
 import GallerySectionTwo from "../components/GallerySectionTwo";
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <GallerySectionOne />
