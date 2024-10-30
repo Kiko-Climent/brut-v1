@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import GallerySectionEight from "../components/GallerySectionEight";
 import GallerySectionFive from "../components/GallerySectionFive";
 import GallerySectionFour from "../components/GallerySectionFour";
+import GallerySectionNine from "../components/GallerySectionNine";
 import GallerySectionOne from "../components/GallerySectionOne";
 import GallerySectionSeven from "../components/GallerySectionSeven";
 import GallerySectionSix from "../components/GallerySectionSix";
@@ -23,6 +24,7 @@ const Gallery = () => {
       <GallerySectionFive />
       <GallerySectionSix />
       <GallerySectionEight />
+      <GallerySectionNine />
       <GallerySectionSeven />
     </div>
   )

@@ -2,11 +2,13 @@ import React from "react";
 import { useEffect } from "react";
 
 import Intro from "../components/Intro";
-import SectionOne from "../components/SectionOne";
+// import SectionOne from "../components/SectionOne";
+import SectionOneParallax from "../components/SectionOneParallax";
 import SectionTwo from "../components/SectionTwo";
 import SectionThree from "../components/SectionThree";
 import SectionFour from "../components/SectionFour";
 import QuoteSectionOne from "../components/QuoteSectionOne";
+import QuoteSectionThree from "../components/QuoteSectionThree";
 
 
 const Home = () => {
@@ -15,7 +17,8 @@ const Home = () => {
   }, []);
   return (
     <>
-      <SectionOne />
+      <SectionOneParallax />
+      <QuoteSectionThree />
       <SectionTwo />
       <QuoteSectionOne />
       <SectionThree />
