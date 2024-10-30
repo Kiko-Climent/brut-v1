@@ -64,7 +64,7 @@ const Nav2 = () => {
   return (
     <nav
       id="header"
-      className={`fixed z-10 w-full flex items-center justify-between py-1 px-2 text-white`}
+      className={`fixed z-10 w-full flex items-center justify-between py-1 px-2 text-white mix-blend-difference`}
     >
       <div
         className={`transition-all duration-300 flex items-start justify-start ${

@@ -97,6 +97,20 @@ p {
   background-size: cover;
 }
 
+.parallax3 {
+  background-image: url("../src/assets/images/pexels-apasaric.jpg");
+  
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 .custom-line-height {
   line-height: 0.7; /* Ajusta este valor según sea necesario */
