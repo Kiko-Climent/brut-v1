@@ -10,6 +10,7 @@ const Nav2 = () => {
 
   // Lista de palabras para el carrusel
   const words = [
+    "brut*",
     "Brutalist",
     "Brutalista",
     "ブルータリスト",
@@ -64,11 +65,11 @@ const Nav2 = () => {
   return (
     <nav
       id="header"
-      className={`fixed z-10 w-full flex items-center justify-between py-1 px-2 text-white mix-blend-difference`}
+      className={`fixed z-10 w-full flex items-center justify-between px-2 text-white mix-blend-difference`}
     >
       <div
         className={`transition-all duration-300 flex items-start justify-start ${
-          isHome && !isScrolled ? "text-[10vw] font-bold h-screen" : "text-lg"
+          isHome && !isScrolled ? "text-[10vw] font-bold -mt-8" : "text-lg"
         }`}
       >
         {/* Mostrar la palabra del carrusel */}
