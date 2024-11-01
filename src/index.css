@@ -98,7 +98,8 @@ p {
 }
 
 .parallax3 {
-  background-image: url("../src/assets/images/pexels-apasaric.jpg");
+  /* background-image: url("../src/assets/images/pexels-apasaric.jpg"); */
+  background-image: url("../src/assets/images/pexels-rick.jpg");
   
   /* Set a specific height */
   min-height: 500px;
