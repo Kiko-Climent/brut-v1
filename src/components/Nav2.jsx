@@ -67,18 +67,17 @@ const Nav2 = () => {
       id="header"
       className={`fixed z-10 w-full flex items-center justify-between px-2 text-white mix-blend-difference`}
     >
-      <div
-        className={`transition-all duration-300 flex items-start justify-start ${
-          isHome && !isScrolled ? "text-[10vw] font-bold -mt-8" : "text-lg"
-        }`}
-      >
+      <div className={`transition-all duration-300 flex items-start justify-start 
+      ${isHome && !isScrolled
+      ? "text-[10vw] font-bold -mt-1 lg:-mt-8"
+      : "text-sm lg:text-base"}`}>
         {/* Mostrar la palabra del carrusel */}
         {words[currentWordIndex]}
       </div>
       <ul
         className={`transition-opacity duration-300 ${
           isScrolled ? "opacity-100" : "opacity-0"
-        } flex items-center gap-1 text-base`}
+        } flex items-center gap-1 text-xs lg:text-base`}
       >
         <li><Link to="/">home /</Link></li>
         <li><Link to="/gallery">gallery /</Link></li>
