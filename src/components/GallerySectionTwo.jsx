@@ -37,7 +37,7 @@ const GallerySectionTwo = () => {
   return (
     <section className='py-2 px-2'>
       <div 
-        className='h-screen overflow-hidden parallax' 
+        className='h-auto lg:h-screen overflow-hidden parallax' 
         style={{ backgroundImage: `url(${bgImage})` }}
       >
       </div>
