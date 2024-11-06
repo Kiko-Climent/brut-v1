@@ -9,7 +9,7 @@ const GallerySectionEight = () => {
         <p>Este es el nuevo texto que quieres añadir en la parte inferior izquierda. Este es el nuevo texto que quieres añadir en la parte inferior izquierda. Este es el nuevo texto que quieres añadir en la parte inferior izquierda. Este es el nuevo texto que quieres añadir en la parte inferior izquierda.</p>
       </div>
       </div>
-      <div className="absolute w-3/4 top-2 pr-3 hov text-white text-right text-xs leading-none">
+      <div className="absolute w-3/4 top-2 pr-3 text-white text-right text-xs leading-none">
         <ul>
           <li>Saburtalo District</li>
           <li>Tbilisi, Georgia</li>

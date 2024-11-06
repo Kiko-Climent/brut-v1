@@ -100,8 +100,8 @@ const GallerySectionFour = () => {
 //   );
 // };
 return (
-  <section className="h-screen flex-col justify-center items-center space-y-2 gap-2 px-2 pt-2 overflow-hidden">
-    <div className="w-10/12 h-1/2 relative group">
+  <section className="h-screen flex-col space-y-2 px-2 pt-2 overflow-hidden">
+    <div className="w-full h-1/2 relative group">
       <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover object-bottom"/>
        <div className="hidden lg:block absolute inset-0 flex justify-center items-center overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-1/3 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
@@ -120,16 +120,16 @@ return (
           )}
         </ul>
       </div>
-      <div className='absolute w-1/3 bottom-2 pl-2 text-justify text-xs lg:text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
+      <div className='hidden lg:block bottom-2 pl-2 text-justify text-xs lg:text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
         {galleryData ? galleryData.description : "Loading..."}
       </div>
     </div>
-    <div className="w-7/12 h-full flex items-start relative">
-      <Slider ref={sliderRef} {...settings} className="w-full h-2/3 object-cover">
+    <div className="w-full h-1/2 flex gap-2">
+      <Slider ref={sliderRef} {...settings} className="w-8/12 h-full object-cover">
         {/* Imagen 1 */}
         <div className="relative">
           
-          <UrlFirebase url={galleryData.carousel_pics[0]} className="w-full h-3/4 object-cover"/>
+          <UrlFirebase url={galleryData.carousel_pics[0]} className="w-full h-full object-cover"/>
           {/* Botón "Next" */}
           <div className="absolute -bottom-1 w-full text-center">
             <button className="text-base text-white" onClick={() => sliderRef.current.slickNext()}>next</button>
@@ -138,7 +138,7 @@ return (
         {/* Imagen 2 */}
         <div className="relative">
           
-          <UrlFirebase url={galleryData.carousel_pics[1]} className="w-full h-3/4 object-cover"/>
+          <UrlFirebase url={galleryData.carousel_pics[1]} className="w-full h-full object-cover"/>
           <div className="absolute -bottom-1  w-full text-center">
             <button className="text-base text-white" onClick={() => sliderRef.current.slickNext()}>next</button>
           </div>
@@ -146,12 +146,15 @@ return (
         {/* Imagen 3 */}
         <div className="relative">
           
-          <UrlFirebase url={galleryData.carousel_pics[2]} className="w-full h-3/4 object-cover"/>
+          <UrlFirebase url={galleryData.carousel_pics[2]} className="w-full h-full object-cover"/>
           <div className="absolute -bottom-1 w-full text-center">
             <button className="text-base text-white" onClick={() => sliderRef.current.slickNext()}>next</button>
           </div>
         </div>
       </Slider>
+      <div className='block lg:hidden w-full text-justify text-xs lg:text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
+          {galleryData ? galleryData.description : "Loading..."}
+      </div>
     </div>
   </section>
 );
