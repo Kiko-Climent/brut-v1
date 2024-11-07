@@ -67,7 +67,7 @@ const Nav2 = () => {
       id="header"
       className={`fixed z-10 w-full flex items-center justify-between px-2 text-white mix-blend-difference`}
     >
-      <div className={`transition-all duration-300 flex items-start justify-start 
+      <div className={`transition-all break-keep duration-300 flex items-start justify-start 
       ${isHome && !isScrolled
       ? "text-[10vw] font-bold -mt-1 lg:-mt-8"
       : "text-sm lg:text-base"}`}>

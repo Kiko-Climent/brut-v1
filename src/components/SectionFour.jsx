@@ -2,7 +2,7 @@ import img5 from '../assets/images/kotryna-juskaite.jpg';
 
 const SectionFour = () => {
   return (
-    <section className="overflow-hidden py-1 lg:py-3">
+    <section className="overflow-hidden py-0 lg:py-3">
       {/* En dispositivos pequeños: flex-col (columna), en grandes: flex-row (fila) */}
       <div className="h-full flex flex-col-reverse lg:flex-row items-center justify-between bg-white">
         {/* Imagen se muestra primero en dispositivos pequeños */}

@@ -3,7 +3,7 @@ import galleryeight1 from "../assets/images/pexels-dariabuntaria.jpg"
 const GallerySectionEight = () => {
   return (
     <section className="relative group px-2 py-0 h-screen w-screen flex items-center justify-center overflow-hidden">
-      <div className="relative flex justify-center items-center h-full w-3/4">
+      <div className="relative flex justify-center items-center h-3/4 lg:h-full w-10/12 lg:w-3/4">
         <img src={galleryeight1} className="h-full w-full object-cover filter invert hover:invert-0 scale-100 hover:scale-105 transition duration-500"/>
       <div className="absolute bottom-2 left-2 w-1/6 text-white text-left text-sm leading-none">
         <p>Este es el nuevo texto que quieres añadir en la parte inferior izquierda. Este es el nuevo texto que quieres añadir en la parte inferior izquierda. Este es el nuevo texto que quieres añadir en la parte inferior izquierda. Este es el nuevo texto que quieres añadir en la parte inferior izquierda.</p>

@@ -49,7 +49,7 @@ const SplashScreen = () => {
             </span>
           ))}
         </div>
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-2 lg:mt-8">
           {letters.map((letter, index) => (
             <span
               key={index}

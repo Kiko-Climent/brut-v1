@@ -73,6 +73,11 @@ p {
   font-weight: 200; /* ExtraLight */
 }
 
+.hyphenated-text {
+  hyphens: manual;
+  overflow-wrap: break-word;
+}
+
 /* Parallax Sections */
 
 .parallax {
@@ -84,15 +89,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media (max-width: 768px) {
-  .parallax {
-    
-    background-position: center;
-    /* background-size: contain;  */
-    
-  }
 }
 
 .parallax2 {
@@ -111,13 +107,25 @@ p {
   background-image: url("../src/assets/images/pexels-rick.jpg");
   
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 200px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    
+    background-position: center;
+    /* background-size: contain;  */
+    
+  }
+  .parallax3 {
+    background-size: contain;
+  }
 }
 
 
