@@ -25,10 +25,8 @@ const GallerySectionSeven = () => {
   };
 
   return (
-    <section className="h-screen flex justify-start lg:justify-around px-2 py-2 relative gap-2 lg:gap-0">
-
-      
-      <div className="w-1/4 h-full flex flex-col">
+    <section className="h-screen w-screen flex flex-col lg:flex-row justify-start lg:justify-around px-2 py-2 relative gap-2 lg:gap-0">
+      <div className="w-1/4 h-1/2 flex-row lg:flex-col">
         <div className="flex">
           <Slider {...settings} className="w-full h-full">
             <div className='h-full'>
@@ -41,10 +39,8 @@ const GallerySectionSeven = () => {
               <img src={galleryseven3} alt="Imagen 3" className="w-full h-full object-cover object-center" />
             </div>
           </Slider>
-        </div>
-
-        
-        <div className='mt-0 flex-schrink'>
+        </div>     
+        <div className='flex'>
           <p className='text-justify text-xs lg:text-sm leading-none tracking-wide text-white'>
             The building's vertical, block-like structure showcases both functionality and minimalism, 
             with large windows and balconies that break up the solid mass of concrete. Despite its stark appearance, the tower reflects the ethos of communal living and urban density, 
@@ -53,7 +49,6 @@ const GallerySectionSeven = () => {
         </div>
       </div>
 
-      
       <div className="w-1/2 h-full relative group">
         <img
           src={galleryseven4}
