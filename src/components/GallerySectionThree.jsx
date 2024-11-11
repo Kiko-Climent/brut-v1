@@ -70,7 +70,7 @@ const GallerySectionThree = () => {
         </div>
 
 
-        <div className='absolute w-full top-1 pl-1 text-left text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-white'>
+        <div className='absolute w-full top-1 pl-1 text-left text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-black lg:text-white'>
           <ul>
           {galleryData ? (
               <>
