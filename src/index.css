@@ -120,7 +120,7 @@ p {
   .parallax {
     
     background-position: center;
-    /* background-size: contain;  */
+    background-size: contain; 
     
   }
   .parallax3 {

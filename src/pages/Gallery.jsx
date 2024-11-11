@@ -11,7 +11,9 @@ import GallerySectionSix from "../components/GallerySectionSix";
 import GallerySectionThree from "../components/GallerySectionThree";
 import GallerySectionTwo from "../components/GallerySectionTwo";
 import GallerySectionSeven2 from "../components/GallerySectionSeven2";
+import GallerySectionSeven3 from "../components/GallerySectionSeven3";
 import GallerySectionFour2 from "../components/GallerySectionFour2";
+import GallerySectionEight2 from "../components/GallerySectionEight2";
 
 const Gallery = () => {
   useEffect(() => {
@@ -25,9 +27,9 @@ const Gallery = () => {
       <GallerySectionFour2 />
       <GallerySectionFive />
       <GallerySectionSix />
-      <GallerySectionEight />
+      <GallerySectionEight2 />
       <GallerySectionNine />
-      <GallerySectionSeven2 />
+      <GallerySectionSeven3 />
       
     </div>
   )
