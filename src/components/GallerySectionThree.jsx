@@ -87,51 +87,5 @@ const GallerySectionThree = () => {
     </section>
   );
 };
-// return (
-//   <section className="h-full lg:h-screen w-full lg:w-screen flex flex-col lg:flex-row px-2 gap-2 overflow-hidden">
-//     <div className="flex items-end gap-2">
-//       <Slider {...settings} className="w-8/12">
-//         <div className='h-full'>
-//           <UrlFirebase url={galleryData.carousel_pics[0]} className="w-full h-full object-cover" />
-//         </div>
-//         <div className='h-full'>
-//           <UrlFirebase url={galleryData.carousel_pics[1]} className="w-full h-full object-cover" />
-//         </div>
-//         <div className='h-full'>
-//           <UrlFirebase url={galleryData.carousel_pics[2]} className="w-full h-full object-cover" />
-//         </div>
-//       </Slider>
-//       <div className='w-full pb-2'>
-//         <p className='text-justify text-xs lg:text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
-//         {galleryData ? galleryData.description : "Loading..."}
-//         </p>
-//       </div>
-//     </div>
-
-//     <div className="w-full h-full relative group">    
-//       <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover" />
-//       <div className="hidden lg:block absolute inset-0 flex justify-center items-center overflow-hidden">
-//         <div className="absolute inset-x-0 top-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
-//         <div className="absolute inset-x-0 bottom-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:translate-y-full"></div>
-//       </div>
-
-
-//       <div className='absolute w-full top-2 pl-2 text-left text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-white'>
-//         <ul>
-//         {galleryData ? (
-//             <>
-//               <li>{galleryData.title}</li>
-//               <li>{galleryData.location}</li>
-//               <li>{galleryData.year}</li>
-//             </>
-//           ) : (
-//             <li>Loading...</li>
-//           )}
-//         </ul>
-//       </div>
-//     </div>
-//   </section>
-// );
-// };
 
 export default GallerySectionThree;
