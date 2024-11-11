@@ -24,10 +24,10 @@ const Gallery = () => {
       <GallerySectionOne />
       <GallerySectionTwo />
       <GallerySectionThree />
+      <GallerySectionEight2 />
       <GallerySectionFour2 />
       <GallerySectionFive />
       <GallerySectionSix />
-      <GallerySectionEight2 />
       <GallerySectionNine />
       <GallerySectionSeven3 />
       

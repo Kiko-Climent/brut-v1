@@ -65,12 +65,12 @@ const GallerySectionSeven3 = () =>  {
       <div className="w-full lg:w-3/4 h-full relative group">    
         <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover" />
         <div className="hidden lg:block absolute inset-0 flex justify-center items-center overflow-hidden">
-          <div className="absolute inset-x-0 top-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
+          <div className="absolute inset-x-0 top-0 h-3/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
           <div className="absolute inset-x-0 bottom-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:translate-y-full"></div>
         </div>
 
 
-        <div className='absolute w-full top-1 pl-1 text-left text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-black lg:text-white'>
+        <div className='absolute w-full top-1 pl-1 lg:pl-0 pr-0 lg:pr-1 text-left lg:text-right text-xs leading-none transition-colors duration-700 group-hover:text-[#0c130c] text-black lg:text-white'>
           <ul>
           {galleryData ? (
               <>

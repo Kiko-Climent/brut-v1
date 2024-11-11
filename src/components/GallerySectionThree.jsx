@@ -42,7 +42,7 @@ const GallerySectionThree = () => {
   }
 
   return (
-    <section className="h-screen w-screen flex flex-col lg:flex-row justify-between px-2 gap-0 lg:gap-2 overflow-hidden items-start">
+    <section className="h-screen w-screen flex flex-col lg:flex-row justify-between px-2 pb-0 lg:pb-2 gap-0 lg:gap-2 overflow-hidden items-start">
       <div className="w-full lg:w-1/4 h-auto flex flex-row lg:flex-col gap-2 lg:gap-0">
         <Slider {...settings} className="w-7/12 lg:w-full h-auto lg:h-3/4">
           <div className='flex h-full'>
@@ -65,7 +65,7 @@ const GallerySectionThree = () => {
       <div className="w-full lg:w-3/4 h-full relative group">    
         <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover" />
         <div className="hidden lg:block absolute inset-0 flex justify-center items-center overflow-hidden">
-          <div className="absolute inset-x-0 top-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
+          <div className="absolute inset-x-0 top-0 h-2/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
           <div className="absolute inset-x-0 bottom-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:translate-y-full"></div>
         </div>
 
