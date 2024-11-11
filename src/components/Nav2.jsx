@@ -20,7 +20,7 @@ const Nav2 = () => {
     "brut*"
   ];
 
-  const totalRotations = 3; // Número de vueltas que quieres que dé el carrusel
+  const totalRotations = 3;
 
   useEffect(() => {
     if (isHome) {

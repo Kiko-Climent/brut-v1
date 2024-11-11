@@ -39,7 +39,7 @@ const GallerySectionEight2 = () => {
   }, [textVisible]);
 
   return (
-    <section ref={sectionRef} className="lg:h-screen lg:w-screen px-2 pt-2 lg:pt-0 pb-0 lg:pb-2 overflow-hidden relative">
+    <section ref={sectionRef} className="lg:h-screen lg:w-screen !px-2 pt-2 lg:pt-0 pb-0 lg:pb-2 overflow-hidden relative">
       <div className={`w-full h-full transition-opacity duration-1000 ${showImage ? 'opacity-100' : 'opacity-0'}`}>
         <img src={galleryeight1} className="h-full w-full object-contain lg:object-cover" alt="Gallery" />
       </div>
