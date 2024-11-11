@@ -30,7 +30,7 @@ return (
     <div className="h-full flex flex-col-reverse lg:flex-row text-justify">
       <div className="px-2 flex lg:flex-col w-full gap-2 pb-2 self-end">
         <div className="w-full">
-          <h1 className="border-b border-white text-sm">about</h1>
+          <h1 className="border-b border-b-[0.5px] border-white text-sm">about</h1>
           <p className="text-xs lg:text-sm hyphens-manual !leading-tight mt-1">
             The primary purpose of this page is purely educational. It explores the fascinating world of brutalist architecture, reflecting my strong inclination towards this design style, not only in architecture but across all fields of design. I believe that the raw, minimalist aesthetic of brutalism 
             captures a unique blend of form and function, challenging conventional design norms and encouraging a deeper appreciation of structure.
@@ -38,8 +38,8 @@ return (
             Thank you for visiting this page, and I hope you find it informative and inspiring!
           </p>
         </div>
-        <div className="w-5/12 lg:w-full">
-          <h1 className="border-b border-white text-sm">photographers</h1>
+        <div className="w-full lg:w-5/12 lg:h-full">
+          <h1 className="border-b border-b-[0.5px] border-white text-sm">photographers</h1>
           <p className="text-xs lg:text-sm !leading-tight mt-1">
             Alexandr Neplokhov<br />Goran Petkovic<br />Ivan Aleksic<br />Joel Filipe<br />Katejan Powolny<br />Kotryna Juskaite<br />Mike Hindle<br />Pavel Neznanov.
           </p>
