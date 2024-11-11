@@ -45,7 +45,7 @@ const GallerySectionEight2 = () => {
       </div>
 
       {/* Texto superior izquierda */}
-      <div className={`absolute w-full bottom-3 pl-1 text-white text-left text-xs leading-none transition-opacity duration-1000 ${showImage ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`absolute w-full bottom-1 lg:bottom-3 pl-1 text-white text-left text-xs leading-none transition-opacity duration-1000 ${showImage ? 'opacity-100' : 'opacity-0'}`}>
         <ul>
           <li>Saburtalo District</li>
           <li>Tbilisi, Georgia</li>
