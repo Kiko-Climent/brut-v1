@@ -82,7 +82,7 @@ p {
 
 .parallax {
   /* Set a specific height */
-  height: 200px;
+  height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -93,7 +93,7 @@ p {
 
 .parallax2 {
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 400px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -104,10 +104,10 @@ p {
 
 .parallax3 {
   /* background-image: url("../src/assets/images/pexels-apasaric.jpg"); */
-  background-image: url("../src/assets/images/pexels-rick.jpg");
+  background-image: url("../src/assets/images/vlad-lihaceanu.jpg");
   
   /* Set a specific height */
-  min-height: 200px;
+  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -120,11 +120,11 @@ p {
   .parallax {
     
     background-position: center;
-    background-size: contain; 
+    /* background-size: contain;  */
     
   }
   .parallax3 {
-    background-size: contain;
+    background-size: center;
   }
 }
 

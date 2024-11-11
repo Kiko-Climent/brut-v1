@@ -47,7 +47,7 @@ const GallerySectionFour2 = () => {
       <div className="w-full lg:w-3/4 h-full relative group">    
         <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover" />
         <div className="hidden lg:block absolute inset-0 flex justify-center items-center overflow-hidden">
-          <div className="absolute inset-x-0 top-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
+          <div className="absolute inset-x-0 top-0 h-2/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:-translate-y-full"></div>
           <div className="absolute inset-x-0 bottom-0 h-1/5 bg-[#0c130c] transition-all duration-700 ease-in-out group-hover:translate-y-full"></div>
         </div>
 
