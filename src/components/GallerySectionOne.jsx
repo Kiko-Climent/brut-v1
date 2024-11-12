@@ -44,7 +44,7 @@ const GallerySectionOne = () => {
   }
 
   return (
-    <section className="h-screen flex flex-col lg:flex-row justify-between px-2 pt-5 lg:pt-6 relative overflow-hidden">
+    <section className="h-screen flex flex-col lg:flex-row justify-between px-2 pt-2 lg:pt-0 relative overflow-hidden">
 
       <div className="hidden lg:block w-2/5 lg:w-1/4 h-full flex flex-col">
         <div className="">

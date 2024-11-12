@@ -39,12 +39,10 @@ const GallerySectionEight2 = () => {
   }, [textVisible]);
 
   return (
-    <section ref={sectionRef} className="lg:h-screen lg:w-screen !px-2 pt-2 lg:pt-0 pb-0 lg:pb-2 overflow-hidden relative">
+    <section ref={sectionRef} className="lg:h-screen lg:w-screen pr-2 lg:pr-[1.45rem] pl-2 lg:pl-[0.5rem] pt-5 lg:pt-6 pb-0 lg:pb-2 overflow-hidden relative">
       <div className={`w-full h-full transition-opacity duration-1000 ${showImage ? 'opacity-100' : 'opacity-0'}`}>
         <img src={galleryeight1} className="h-full w-full object-contain lg:object-cover" alt="Gallery" />
       </div>
-
-      {/* Texto superior izquierda */}
       <div className={`absolute w-full bottom-1 lg:bottom-3 pl-1 text-white text-left text-xs leading-none transition-opacity duration-1000 ${showImage ? 'opacity-100' : 'opacity-0'}`}>
         <ul>
           <li>Saburtalo District</li>
@@ -54,8 +52,8 @@ const GallerySectionEight2 = () => {
       </div>
 
       {/* Animación de texto palabra por palabra */}
-      <div className={`absolute w-full inset-0 flex items-center justify-center text-center text-xs leading-none transition-colors duration-1000 ${showImage ? 'text-[#0c130c]' : 'text-white'}`}>
-        <h1 className="uppercase text-[10vw] lg:text-[10vw]">
+      <div className={`absolute w-full inset-0 flex items-center justify-center text-justify text-xs leading-none transition-colors duration-1000 ${showImage ? 'text-[#0c130c]' : 'text-white'}`}>
+        <h1 className="pr-2 lg:pr-[1.7rem] pl-2 lg:pl-[0.5rem] uppercase text-[10vw] lg:text-[10vw]">
           {words.map((word, index) => (
             <span
               key={index}

@@ -56,7 +56,7 @@ const GallerySectionSix = () => {
             )}
           </ul>
         </div>
-        <div className='absolute w-5/12 lg:w-1/3 bottom-2 right-2 text-justify text-xs lg:text-sm leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
+        <div className='absolute w-5/12 lg:w-1/3 bottom-2 right-2 text-justify text-xs lg:text-sm !leading-none tracking-wide transition-colors duration-700 group-hover:text-white text-white'>
           <p>
           {galleryData ? galleryData.description : "Loading..."}
           </p>

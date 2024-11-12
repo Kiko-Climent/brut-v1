@@ -1,8 +1,9 @@
-// Import the functions you need from the SDKs you need
+// Importa las funciones necesarias de los SDK de Firebase
 import { initializeApp } from "firebase/app";
+import { getFirestore, initializeFirestore, setLogLevel } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; // Asegúrate de importar getStorage
 
-// Your web app's Firebase configuration
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "brut-99566.firebaseapp.com",
@@ -13,11 +14,15 @@ const firebaseConfig = {
   measurementId: "G-2H58GY62PX"
 };
 
-
-// Initialize Firebase
+// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
+
+// Inicializar Firestore sin persistencia offline y con logging detallado
+const db = initializeFirestore(app, { useFetchStreams: false });
+setLogLevel("debug");  // Activa el logging de depuración para Firestore
+
+// Inicializar Firebase Storage
 const storage = getStorage(app);
 
 // Exporta como exportaciones nombradas
-export { app, storage };
-
+export { app, db, storage };

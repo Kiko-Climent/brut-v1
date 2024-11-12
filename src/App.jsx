@@ -4,15 +4,15 @@ import SplashScreen from "./components/Splash2";
 import AnimatedRoutes from "./components/routes/AnimatedRoutes";
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true); // Estado para controlar la visibilidad del SplashScreen
+  const [showSplash, setShowSplash] = useState(true); // State to control Splash Screen
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 8800); // Mostrar SplashScreen por 3 segundos
-    return () => clearTimeout(timer); // Limpiar el temporizador al desmontar
+    const timer = setTimeout(() => setShowSplash(false), 8800);
+    return () => clearTimeout(timer);
   }, []);
 
   if (showSplash) {
-    return <SplashScreen />; // Mostrar solo el SplashScreen si el estado es true
+    return <SplashScreen />;
   }
   
   return (

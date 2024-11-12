@@ -42,7 +42,7 @@ const GallerySectionThree = () => {
   }
 
   return (
-    <section className="h-screen w-screen flex flex-col lg:flex-row justify-between !px-2 pb-0 lg:pb-2 gap-0 lg:gap-2 overflow-hidden items-start">
+    <section className="h-screen w-screen flex flex-col lg:flex-row justify-between pr-2 lg:pr-[1.45rem] pl-2 lg:pl-[0.5rem] pb-0 lg:pb-2 gap-0 lg:gap-2 overflow-hidden items-start">
       <div className="w-full lg:w-1/4 h-auto flex flex-row lg:flex-col gap-2 lg:gap-0">
         <Slider {...settings} className="w-7/12 lg:w-full h-auto lg:h-3/4">
           <div className='flex h-full'>

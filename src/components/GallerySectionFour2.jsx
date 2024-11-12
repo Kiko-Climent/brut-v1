@@ -43,7 +43,7 @@ const GallerySectionFour2 = () => {
   }
 
   return (
-    <section className="h-screen w-screen flex flex-col lg:flex-row justify-between !px-2 pt-2 lg:pt-0 py-0 lg:py-2 gap-2 lg:gap-2 overflow-hidden items-start">
+    <section className="h-screen w-screen flex flex-col lg:flex-row justify-between pr-2 lg:pr-[1.45rem] pl-2 lg:pl-[0.5rem] pt-2 lg:pt-0 py-0 lg:py-2 gap-2 lg:gap-2 overflow-hidden items-start">
       <div className="w-full lg:w-3/4 h-full relative group">    
         <UrlFirebase url={galleryData.main_pic} className="w-full h-full object-cover" />
         <div className="hidden lg:block absolute inset-0 flex justify-center items-center overflow-hidden">

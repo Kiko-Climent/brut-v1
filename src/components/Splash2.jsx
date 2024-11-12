@@ -28,11 +28,10 @@ const SplashScreen = () => {
 
   return (
     <section className="flex flex-col overflow-hidden h-screen relative">
-      {/* Imagen ocupando toda la pantalla */}
       <div className="absolute inset-0">
         <img
           src={splashimage}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fill lg:object-cover"
           alt="Splash"
         />
       </div>

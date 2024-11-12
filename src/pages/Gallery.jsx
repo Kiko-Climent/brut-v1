@@ -17,10 +17,10 @@ const Gallery = () => {
   }, []);
   return (
     <div>
+      <GallerySectionEight2 />
       <GallerySectionOne />
       <GallerySectionTwo />
       <GallerySectionThree />
-      <GallerySectionEight2 />
       <GallerySectionFour2 />
       <GallerySectionFive />
       <GallerySectionSix />

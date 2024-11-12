@@ -1,4 +1,4 @@
-import img2 from '../assets/images/kajetan-powolny.jpg';
+import img2 from '../assets/images/alexander-psiuk.jpg';
 
 const SectionTwo = () => {
   return (
